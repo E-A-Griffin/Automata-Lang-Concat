@@ -4,9 +4,11 @@ Designed as a simple tool for calculating the concatenation of finite languages 
 
 ## Usage
 If you have access to a bash shell simply run
-    ``./l-concat`` 
+    
+    ./l-concat 
 Otherwise, you may run
-    ```java -jar target/uberjar/language-concat-0.1.0-SNAPSHOT-standalone.jar```
+    
+    java -jar target/uberjar/language-concat-0.1.0-SNAPSHOT-standalone.jar
 
 ## Options
 Either of these may be run with or without command-line arguments. If you supply
@@ -14,8 +16,8 @@ command-line arguments, please list the elements of the language you are specify
     $ ./l-concat a ab 2 $
 
 ## Examples
-    $ ./l-concat a ab ba bbb 3 $
-    $ L³= {aaa, abaa, baaa, bbbaa,
+    ./l-concat a ab ba bbb 3
+    L³= {aaa, abaa, baaa, bbbaa,
      aaba, ababa, baaba, bbbaba,
      abaa, abbaa, babaa, bbbbaa,
      abbba, abbbba, babbba, bbbbbba,
@@ -31,7 +33,7 @@ command-line arguments, please list the elements of the language you are specify
      aabbbb, ababbbb, baabbbb, bbbabbbb,
      ababbb, abbabbb, bababbb, bbbbabbb,
      abbbbbb, abbbbbbb, babbbbbb, bbbbbbbbb}
- and has size: 64 $
+       and has size: 64
 
 ## License
 
