@@ -1,32 +1,37 @@
 # language-concat
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+Designed as a simple tool for calculating the concatenation of finite languages within the field of Automata Theory.
 
 ## Usage
-
-FIXME: explanation
-
-    $ java -jar language-concat-0.1.0-standalone.jar [args]
+If you have access to a bash shell simply run
+    $ ./l-concat $
+Otherwise, you may run
+    $ java -jar target/uberjar/language-concat-0.1.0-SNAPSHOT-standalone.jar $
 
 ## Options
-
-FIXME: listing of options this app accepts.
+Either of these may be run with or without command-line arguments. If you supply
+command-line arguments, please list the elements of the language you are specifying, separated by spaces, followed by the number of concatenations, for example, to calculate L² from L = {a, ab}
+    $ ./l-concat a ab 2 $
 
 ## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+    $ ./l-concat a ab ba bbb 3 $
+    $ L³= {aaa, abaa, baaa, bbbaa,
+     aaba, ababa, baaba, bbbaba,
+     abaa, abbaa, babaa, bbbbaa,
+     abbba, abbbba, babbba, bbbbbba,
+     aaab, abaab, baaab, bbbaab,
+     aabab, ababab, baabab, bbbabab,
+     abaab, abbaab, babaab, bbbbaab,
+     abbbab, abbbbab, babbbab, bbbbbbab,
+     aaba, ababa, baaba, bbbaba,
+     aabba, ababba, baabba, bbbabba,
+     ababa, abbaba, bababa, bbbbaba,
+     abbbba, abbbbba, babbbba, bbbbbbba,
+     aabbb, ababbb, baabbb, bbbabbb,
+     aabbbb, ababbbb, baabbbb, bbbabbbb,
+     ababbb, abbabbb, bababbb, bbbbabbb,
+     abbbbbb, abbbbbbb, babbbbbb, bbbbbbbbb}
+ and has size: 64 $
 
 ## License
 
