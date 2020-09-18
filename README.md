@@ -4,7 +4,7 @@ Designed as a simple tool for calculating the concatenation of finite languages 
 
 ## Usage
 If you have access to a bash shell simply run
-    $ ./l-concat $
+    `./l-concat` 
 Otherwise, you may run
     $ java -jar target/uberjar/language-concat-0.1.0-SNAPSHOT-standalone.jar $
 
