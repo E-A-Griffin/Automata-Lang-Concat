@@ -13,7 +13,8 @@ Otherwise, you may run
 ## Options
 Either of these may be run with or without command-line arguments. If you supply
 command-line arguments, please list the elements of the language you are specifying, separated by spaces, followed by the number of concatenations, for example, to calculate L² from L = {a, ab}
-    $ ./l-concat a ab 2 $
+    
+    ./l-concat a ab 2
 
 ## Examples
     ./l-concat a ab ba bbb 3
@@ -37,7 +38,7 @@ command-line arguments, please list the elements of the language you are specify
 
 ## License
 
-Copyright © 2020 FIXME
+Copyright © 2020
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
